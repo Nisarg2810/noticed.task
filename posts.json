@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "When I was a kid, my grandfather bought a bulldozer for five thousand dollars. A 1955 Caterpillar D6, completely broken down. New, it would have cost more than a hundred thousand.\n\nWe spent the entire summer fixing it. Just the two of us, out on the ranch in Texas. We ordered replacement gears through the mail, and when they arrived they were too heavy to lift by hand, so we built a crane. Not bought one. Built one, because that's what you did when something was too heavy to lift and the nearest town was an hour away.\n\nMy grandfather did all his own veterinary work too. He'd take a piece of wire, heat it, pound it thin, drill a hole in it, sharpen it, and that was his suture needle. He never once picked up the phone and called somebody to come fix a problem. He just figured it out.\n\nI didn't understand at the time that I was being taught anything. It just felt like a summer. But that's where I actually learned that most problems are solvable with persistence and a little ingenuity, and that waiting for someone else to solve it for you is usually just a more expensive, slower version of solving it yourself.\n\nI think about that bulldozer more than you'd expect for a man who now spends his time on rockets. Different scale, same instinct. Figure it out yourself first.",
+    "type": "standard",
+    "featured": false
+  },
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "I went to Princeton to become a theoretical physicist. I was good at it. Not good enough, and I found that out from a guy named Yosanta, in his dorm room, at around eleven at night.\n\nA friend and I had been stuck on a partial differential equation for three hours. Real stuck, no progress. So we did what you did when you hit that wall: you went to Yosanta's room, because he was always there, and he was the most brilliant, most humble person either of us had ever met.\n\nHe looked at our problem for maybe ten seconds and said, \"cosine.\"\n\nI said, what do you mean, Yosanta. He said, that's the answer. I said no, come on. So he wrote three pages of equations, and everything canceled out, and the answer was cosine.\n\nI asked if he'd done that in his head. He said, oh no, that would be impossible, I solved something similar a few years ago and I could map this problem onto that one.\n\nThat's when I knew. Not that I was bad at physics. I was fine at physics. But there's a difference between being good at something and being built for it, and watching Yosanta work, I understood I wasn't built for that particular thing at the very top of the field.\n\nI switched to computer science. I still think about that room sometimes. There are a thousand ways to be smart, and figuring out which one is actually yours is worth more than pride ever will be.",
+    "type": "standard",
+    "featured": false
+  },
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "Early on at Amazon, our metrics said customers waited under sixty seconds when they called our support line. The complaints said otherwise.\n\nI have a rule for exactly this situation: when the data and the anecdotes disagree, the anecdotes are usually right. Not because the data was faked. Because you're probably not measuring the thing you actually care about.\n\nSo in a meeting, going through the weekly business review, we hit that metric on the slide, and the person responsible for it started to explain it away. I picked up the phone instead. Dialed the 1-800 number myself, right there, and put it on speaker.\n\nWe sat in silence for over ten minutes.\n\nNobody said anything. There wasn't much to say. The number on the page said something. The actual customer, waiting on hold right now, said something completely different, and the second one was true.\n\nThat call is the whole argument, distilled. Metrics are proxies. Somebody invented that metric for a real reason once, and over time people forget the reason and just watch the number. You have to keep asking what you actually care about, and go check it yourself when the number stops matching what you're hearing.\n\nI've dialed a lot of numbers myself since then. It's still the fastest way I know to find out what's actually true.",
+    "type": "standard",
+    "featured": false
+  },
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "New Glenn blew up on the pad in May. We lost the lightning tower, the transporter-erector, a lot of the launch infrastructure at LC-36. It was, by some estimates, one of the more powerful rocket explosions since the Soviets lost the N1.\n\nWe could have rebuilt the pad exactly as it was. Faster, probably, and nobody would have blamed us for taking the safe, known path back to flight.\n\nWe didn't. We're going with a completely different launch concept, a hybrid approach we'd already been developing for a future version of the vehicle, using existing infrastructure instead of rebuilding a transporter-erector we know has a failure mode we now understand too well.\n\nHere's how I think about that decision. Most decisions are two-way doors. You try something, it doesn't work, you walk back through and pick a different door. This wasn't that. How we rebuild this specific piece of infrastructure is close to a one-way door, because whatever we choose now, we're going to be living with for years of launches. That's exactly the kind of decision you slow down on, even when the whole world is asking why you haven't launched yet.\n\nRate manufacturing, rebuilding a launch pad, these aren't glamorous problems. They're the actual problem. Anyone can design a rocket that works once. The real work is building something that can fail, get back up, and fly again smarter than it flew before.\n\nWe'll fly again this year. And the pad we fly from will be better than the one we lost.",
+    "type": "standard",
+    "featured": false
+  },
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "An AI model just disproved a decades-old open problem in combinatorial geometry, the unit distance conjecture tied to Paul Erd\u0151s. A Fields Medalist looked at the proof and said it belonged in a top journal.\n\nI said something on a podcast a while back that I still believe: large language models, in their current form, are closer to discoveries than inventions. A telescope is an invention. You know exactly what it does. Pointing it at Jupiter and finding moons nobody expected, that's a discovery. We built these systems, and we're still finding out what they can actually do, the same way Galileo pointed a tool at the sky and found something he didn't put there.\n\nWhat happened this week is exactly that. Nobody sat down and engineered a model specifically to solve a seventy-year-old problem in combinatorial geometry. The capability just showed up, the same way a lot of what these systems can do just shows up, and now the interesting work is figuring out what else is already in there that we haven't gone looking for yet.\n\nI know there's a real, serious debate about where all of this goes. I understand the caution. But I keep coming back to something simple: these tools are far more likely to help us than to hurt us, and weeks like this one are the actual evidence, not the theory.\n\nWe haven't learned the last trick yet. That's the exciting part.",
+    "type": "standard",
+    "featured": false
+  },
+  {
+    "name": "Jeff Bezos",
+    "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
+    "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
+    "body": "A Microsoft executive sent a memo to engineers this week with a line I wish I'd written myself: \"Tokenmaxxing is not what we are optimizing for.\"\n\nSome engineers were apparently burning thousands of dollars a month in AI tokens on Copilot. Somewhere along the way, token usage became the thing people were quietly managing to, instead of the thing token usage was supposed to be a proxy for, which is actually getting work done well.\n\nI've watched this exact pattern happen with a hundred different metrics over thirty years, just wearing different clothes. Somebody invents a number because it's a genuinely useful signal for something real. Time passes. The reason gets forgotten, and the number becomes the whole point. People start optimizing the proxy instead of the truth it was supposed to represent.\n\nToken spend was never the goal. It was supposed to be a rough signal for engineering velocity, and somewhere it quietly became the scoreboard itself.\n\nThe fix isn't complicated, but it does take someone willing to say it out loud in a memo everyone can see: go back and ask what you actually care about. If a cheaper model gets the same real outcome, the expensive one wasn't buying you anything except a bigger number to point at.\n\nEvery company running hard on AI right now should go find their own version of this memo. I'd bet most haven't written it yet.",
+    "type": "standard",
+    "featured": false
+  }
+]
