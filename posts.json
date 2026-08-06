@@ -16,7 +16,7 @@
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
     "body": "Early on at Amazon, our metrics said customers waited under sixty seconds when they called our support line. The complaints said otherwise.\n\nI have a rule for exactly this situation: when the data and the anecdotes disagree, the anecdotes are usually right. Not because the data was faked. Because you're probably not measuring the thing you actually care about.\n\nSo in a meeting, going through the weekly business review, we hit that metric on the slide, and the person responsible for it started to explain it away. I picked up the phone instead. Dialed the 1-800 number myself, right there, and put it on speaker.\n\nWe sat in silence for over ten minutes.\n\nNobody said anything. There wasn't much to say. The number on the page said something. The actual customer, waiting on hold right now, said something completely different, and the second one was true.\n\nThat call is the whole argument, distilled. Metrics are proxies. Somebody invented that metric for a real reason once, and over time people forget the reason and just watch the number. You have to keep asking what you actually care about, and go check it yourself when the number stops matching what you're hearing.\n\nI've dialed a lot of numbers myself since then. It's still the fastest way I know to find out what's actually true.",
@@ -24,7 +24,7 @@
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
     "body": "New Glenn blew up on the pad in May. We lost the lightning tower, the transporter-erector, a lot of the launch infrastructure at LC-36. It was, by some estimates, one of the more powerful rocket explosions since the Soviets lost the N1.\n\nWe could have rebuilt the pad exactly as it was. Faster, probably, and nobody would have blamed us for taking the safe, known path back to flight.\n\nWe didn't. We're going with a completely different launch concept, a hybrid approach we'd already been developing for a future version of the vehicle, using existing infrastructure instead of rebuilding a transporter-erector we know has a failure mode we now understand too well.\n\nHere's how I think about that decision. Most decisions are two-way doors. You try something, it doesn't work, you walk back through and pick a different door. This wasn't that. How we rebuild this specific piece of infrastructure is close to a one-way door, because whatever we choose now, we're going to be living with for years of launches. That's exactly the kind of decision you slow down on, even when the whole world is asking why you haven't launched yet.\n\nRate manufacturing, rebuilding a launch pad, these aren't glamorous problems. They're the actual problem. Anyone can design a rocket that works once. The real work is building something that can fail, get back up, and fly again smarter than it flew before.\n\nWe'll fly again this year. And the pad we fly from will be better than the one we lost.",
@@ -35,7 +35,7 @@
     "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg",
-    "body": "An AI model just disproved a decades-old open problem in combinatorial geometry, the unit distance conjecture tied to Paul Erd\u0151s. A Fields Medalist looked at the proof and said it belonged in a top journal.\n\nI said something on a podcast a while back that I still believe: large language models, in their current form, are closer to discoveries than inventions. A telescope is an invention. You know exactly what it does. Pointing it at Jupiter and finding moons nobody expected, that's a discovery. We built these systems, and we're still finding out what they can actually do, the same way Galileo pointed a tool at the sky and found something he didn't put there.\n\nWhat happened this week is exactly that. Nobody sat down and engineered a model specifically to solve a seventy-year-old problem in combinatorial geometry. The capability just showed up, the same way a lot of what these systems can do just shows up, and now the interesting work is figuring out what else is already in there that we haven't gone looking for yet.\n\nI know there's a real, serious debate about where all of this goes. I understand the caution. But I keep coming back to something simple: these tools are far more likely to help us than to hurt us, and weeks like this one are the actual evidence, not the theory.\n\nWe haven't learned the last trick yet. That's the exciting part.",
+    "body": "An AI model just disproved a decades-old open problem in combinatorial geometry, the unit distance conjecture tied to Paul Erdős. A Fields Medalist looked at the proof and said it belonged in a top journal.\n\nI said something on a podcast a while back that I still believe: large language models, in their current form, are closer to discoveries than inventions. A telescope is an invention. You know exactly what it does. Pointing it at Jupiter and finding moons nobody expected, that's a discovery. We built these systems, and we're still finding out what they can actually do, the same way Galileo pointed a tool at the sky and found something he didn't put there.\n\nWhat happened this week is exactly that. Nobody sat down and engineered a model specifically to solve a seventy-year-old problem in combinatorial geometry. The capability just showed up, the same way a lot of what these systems can do just shows up, and now the interesting work is figuring out what else is already in there that we haven't gone looking for yet.\n\nI know there's a real, serious debate about where all of this goes. I understand the caution. But I keep coming back to something simple: these tools are far more likely to help us than to hurt us, and weeks like this one are the actual evidence, not the theory.\n\nWe haven't learned the last trick yet. That's the exciting part.",
     "type": "standard",
     "featured": false
   },
@@ -47,63 +47,52 @@
     "type": "standard",
     "featured": false
   },
-
-
-
-  
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
     "body": "My grandfather bought a bulldozer once. A 1955 Caterpillar D6, completely broken down, and he got it for five thousand dollars. New, that thing would've cost more than a hundred thousand. We spent the whole summer fixing it. Just the two of us, out on the ranch.\n\nWe'd order parts by mail, big transmission gears and so on, and they'd show up too heavy to lift by hand. So we'd build a crane. Not buy one. Build one, right there, because the nearest place to rent equipment was an hour away and my grandfather just didn't really believe in calling somebody.\n\nHe made his own veterinary tools too. I watched him take a piece of wire, heat it up, pound it thin, drill a hole in it, sharpen it, and that was a suture needle. That's just how he operated. He didn't pick up the phone. He figured it out.\n\nI don't think I understood, at the time, that I was being taught anything. It was just a summer. But that's genuinely where it came from, this idea that most things are solvable with enough persistence and a little ingenuity, and that waiting around for someone else to fix it is usually just the slower, more expensive version of fixing it yourself.\n\nI still think about that bulldozer more than you'd expect, honestly, for a guy who spends his time on rockets now. Different scale. Same instinct, though. Figure it out yourself, first.",
     "type": "standard",
-
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
     "body": "I went to Princeton to become a theoretical physicist. That was the whole plan. I loved it, I was good at it, and there was a guy in my classes named Yosanta who, without ever meaning to, talked me out of it.\n\nA friend and I were stuck on a partial differential equation. Really stuck, like three hours, zero progress, and at some point we just looked at each other and said his name at the same time. Went to his dorm room, which is where he basically always was.\n\nHe looked at the problem for maybe ten seconds. Said, \"cosine.\"\n\nI said, what do you mean, Yosanta, what do you mean cosine. He said that's the answer. I said no, come on. So he wrote out three pages of equations, and everything canceled out, and yeah. Cosine.\n\nI asked if he'd done it in his head. He said oh no, that would be impossible, he'd solved something similar a couple years back and could just map this one onto that one.\n\nThat was the moment, honestly. Not that I was bad at physics, I wasn't bad. But there's a difference between being good at something and being built for it. And watching Yosanta work, I understood pretty clearly which one I was, at the very top of that field.\n\nSwitched to computer science not long after. There are a thousand ways to be smart. Figuring out which one is actually yours matters a lot more than the pride you'd swallow getting there.",
     "type": "standard",
-
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
     "body": "Early Amazon, we had a metric that said customers were waiting under sixty seconds when they called support. The complaints said something pretty different.\n\nI have a rule about this. When the data and the anecdotes disagree, the anecdotes are usually right. Not because someone faked the number. Just, you're probably not measuring the thing you actually think you're measuring.\n\nSo we're in a meeting, weekly business review, we hit that slide, and the guy responsible starts to explain why the metric's fine. And I just picked up the phone. Dialed the 1-800 number myself, right there in the room, put it on speaker.\n\nWe sat there. In silence. For over ten minutes.\n\nNobody said much. There wasn't much to say, really. The number on the slide said one thing. The actual hold music, playing in the room while we all just sat there, said something else entirely, and the second one was the true one.\n\nThat's kind of the whole argument, distilled down to one phone call. Somebody invented that metric for a real reason, once. Time passes, people forget the reason, and they just watch the number climb or fall. You have to keep asking what you actually care about, underneath the metric, and sometimes you just have to go check it yourself.\n\nI've dialed a lot of numbers since then. Still the fastest way I know to find out what's actually true.",
     "type": "standard",
-
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
     "body": "New Glenn blew up on the pad back in May. Lost the lightning tower, the transporter-erector, a good chunk of the launch infrastructure at LC-36. One of the more powerful rocket explosions, by some estimates, since the Soviets lost the N1.\n\nWe could've just rebuilt the pad exactly the way it was. Honestly, that's probably the faster path, and nobody would've blamed us for taking it.\n\nWe didn't. We're going with a totally different launch concept instead, a hybrid approach we'd already been quietly developing for a later version of the vehicle. Uses existing infrastructure. Skips rebuilding a transporter-erector that, well, we now understand a failure mode of a little too well.\n\nHere's how I actually think about a decision like that. Most decisions are two-way doors, you walk through, it doesn't work, you walk back and pick a different one. This isn't really that. How we rebuild this specific piece of infrastructure is close to a one-way door, because whatever we choose now, we're living with it for years of launches. That's exactly the kind of call you slow down on. Even, maybe especially, when the whole internet is asking why you haven't launched yet.\n\nRate manufacturing, rebuilding a pad properly, none of that is glamorous. But it's the actual work. Anyone can design a rocket that flies once. The real job is building something that can fail, get back up, and fly again smarter than it did before.\n\nWe'll fly this year. And the pad we fly from is going to be better than the one we lost.",
     "type": "standard",
-
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
-    "body": "An AI model just disproved a decades-old open problem in combinatorial geometry, the unit distance conjecture, tied to Erd\u0151s. A Fields Medalist looked at the proof and said, put it in a top journal.\n\nI said something on a podcast a while back that I still think is right. These large language models, the way they exist right now, are closer to discoveries than inventions. A telescope's an invention, you know exactly what it does going in. Pointing it at Jupiter and finding moons nobody expected, that part's a discovery. We built these systems. We're still finding out what's actually in them. Kind of like Galileo pointing a tool at the sky and finding something he didn't put there himself.\n\nThis week is exactly that, honestly. Nobody sat down and engineered a model specifically to crack a seventy-year-old geometry problem. The capability was just, it was already there, the same way a lot of what these systems can do just shows up unannounced. And now the interesting question is what else is already sitting in there that nobody's gone looking for yet.\n\nI know there's a real debate about where all this goes, and I get the caution, I really do. But I keep coming back to something simple. These tools are a lot more likely to help us than hurt us, and a week like this one is the actual evidence. Not the theory.\n\nWe haven't learned the last trick yet. That's the exciting part, if you ask me.",
+    "body": "An AI model just disproved a decades-old open problem in combinatorial geometry, the unit distance conjecture, tied to Erdős. A Fields Medalist looked at the proof and said, put it in a top journal.\n\nI said something on a podcast a while back that I still think is right. These large language models, the way they exist right now, are closer to discoveries than inventions. A telescope's an invention, you know exactly what it does going in. Pointing it at Jupiter and finding moons nobody expected, that part's a discovery. We built these systems. We're still finding out what's actually in them. Kind of like Galileo pointing a tool at the sky and finding something he didn't put there himself.\n\nThis week is exactly that, honestly. Nobody sat down and engineered a model specifically to crack a seventy-year-old geometry problem. The capability was just, it was already there, the same way a lot of what these systems can do just shows up unannounced. And now the interesting question is what else is already sitting in there that nobody's gone looking for yet.\n\nI know there's a real debate about where all this goes, and I get the caution, I really do. But I keep coming back to something simple. These tools are a lot more likely to help us than hurt us, and a week like this one is the actual evidence. Not the theory.\n\nWe haven't learned the last trick yet. That's the exciting part, if you ask me.",
     "type": "standard",
-
     "featured": false
   },
   {
-"name": "Jeff Bezos",
+    "name": "Jeff Bezos",
     "role": "Founder, Amazon | Founder, Blue Origin | Executive Chairman",
     "photo": "",
     "body": "A Microsoft exec sent a memo to engineers this week with a line I genuinely wish I'd written. \"Tokenmaxxing is not what we are optimizing for.\"\n\nApparently some engineers were burning a couple thousand dollars a month in AI tokens on Copilot. And somewhere along the way, token usage just quietly became the thing people were managing to, instead of the thing token usage was only ever supposed to be a proxy for, which is, you know, actually getting the work done well.\n\nI've watched this exact pattern play out, probably a hundred times over thirty years, just wearing a different metric's clothes each time. Somebody invents a number because it's a genuinely useful signal for something real. Time goes by. The reason behind it gets forgotten, and the number itself becomes the whole point. People start optimizing the proxy, not the truth underneath it.\n\nToken spend was never actually the goal, not once. It was supposed to be a rough signal for engineering velocity, and somewhere it just quietly turned into the scoreboard itself.\n\nThe fix isn't complicated. It just takes somebody willing to say it plainly, in a memo everybody can see. Go back and ask what you actually care about. If a cheaper model gets you the same real outcome, the expensive one wasn't buying you anything except a bigger number to point at in a meeting.\n\nEvery company running hard on AI right now probably has their own version of this memo sitting unwritten. I'd bet most of them haven't gotten around to it yet.",
-        "type": "standard",
-
+    "type": "standard",
     "featured": false
   }
-
 ]
