@@ -296,15 +296,26 @@
     box-shadow: 0 0 22px 8px rgba(0,0,0,0.18);
   }
 
-  /* Bottom-right "watch my intro video" card on the posts page */
-  #videoCtaCard {
-    position: fixed; right: 20px; bottom: 20px; z-index: 500; display: none;
-    align-items: center; gap: 12px; background: #0b0b0b; color: #fff;
+  /* Bottom-right stack of video CTA cards on the posts page.
+     A single fixed container with column-reverse + gap keeps the cards
+     from ever overlapping, no matter how tall each card gets (long text
+     wrap, narrow phones, etc.) — the browser handles the spacing, not a
+     hardcoded pixel offset. */
+  #videoCtaStack {
+    position: fixed; right: 16px; bottom: 16px; z-index: 500; display: none;
+    flex-direction: column-reverse; align-items: flex-end; gap: 12px;
+    max-width: min(260px, calc(100vw - 32px));
+  }
+  .video-cta-card {
+    display: flex; align-items: center; gap: 12px; background: #0b0b0b; color: #fff;
     border-radius: 16px; padding: 10px 18px 10px 10px; cursor: pointer;
-    box-shadow: var(--shadow-lg); max-width: 260px;
+    box-shadow: var(--shadow-lg); width: 100%;
     font-family: -apple-system, "Segoe UI", sans-serif;
   }
-  #videoCtaCard:hover { filter: brightness(1.08); }
+  .video-cta-card:hover { filter: brightness(1.08); }
+  @media (max-width: 480px) {
+    #videoCtaStack { right: 10px; bottom: 10px; left: 10px; max-width: none; align-items: stretch; }
+  }
   .video-cta-icon {
     width: 42px; height: 42px; border-radius: 11px; background: var(--brand-green);
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -313,7 +324,7 @@
   .video-cta-title { font-family: var(--font-display); font-weight: 400; font-size: 13px; letter-spacing: -0.01em; line-height: 1.3; }
   .video-cta-sub { font-size: 11.5px; color: rgba(255,255,255,0.6); margin-top: 2px; }
 
-  #videoModalOverlay {
+  #videoModalOverlay, #introModalOverlay {
     position: fixed; inset: 0; z-index: 9600; display: none;
     align-items: center; justify-content: center; background: rgba(0,0,0,0.75);
     padding: 24px;
@@ -425,16 +436,28 @@
 <div id="cursorDot"></div>
 <div id="cursorRing"></div>
 
-<!-- Bottom-right card on the posts page, links to the intro video -->
-<div id="videoCtaCard">
-  <div class="video-cta-icon">
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L19 12L6 20V4Z" fill="#000"/></svg>
+<!-- Bottom-right stack of video CTA cards on the posts page -->
+<div id="videoCtaStack">
+  <div id="videoCtaCard" class="video-cta-card">
+    <div class="video-cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L19 12L6 20V4Z" fill="#000"/></svg>
+    </div>
+    <div>
+      <div class="video-cta-title">Watch my thought-process video</div>
+      <div class="video-cta-sub">I’m *currently* not great at speaking infront of camera, but focus on my words and thinking...Ig that’s more/most important for this role</div>
+      <div class="video-cta-sub">Click here →</div>
+    </div>
   </div>
-  <div>
-    <div class="video-cta-title">Watch my thought-process video</div>
-    <div class="video-cta-sub">I’m *currently* not great at speaking infront of camera, but focus on my words and thinking...Ig that’s more/most important for this role</div>
-        <div class="video-cta-sub">Click here →</div>
 
+  <div id="introCtaCard" class="video-cta-card">
+    <div class="video-cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L19 12L6 20V4Z" fill="#000"/></svg>
+    </div>
+    <div>
+      <div class="video-cta-title">Watch my intro video</div>
+      <div class="video-cta-sub">A quick hello - who I am and what I'm about.</div>
+      <div class="video-cta-sub">Click here →</div>
+    </div>
   </div>
 </div>
 
@@ -442,6 +465,13 @@
   <div class="video-modal-card">
     <button class="video-modal-close" id="videoModalCloseBtn">✕</button>
     <iframe class="video-modal-iframe" id="videoModalIframe" src="" title="My application video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div id="introModalOverlay">
+  <div class="video-modal-card">
+    <button class="video-modal-close" id="introModalCloseBtn">✕</button>
+    <iframe class="video-modal-iframe" id="introModalIframe" src="" title="My intro video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -557,6 +587,7 @@ const INTRO_SLIDES_DATA = [
   }
 ];
 const VIDEO_EMBED_URL = "https://www.youtube.com/embed/OP-bMrihdTg?si=KYuqSlXQF0ZJVHpL&amp;controls=0"; // <-- your YouTube video embed link
+const INTRO_VIDEO_EMBED_URL = "https://www.youtube.com/embed/zbmhmXEFidE?si=UJYz1wGuVSBVba02&controls=0"; // <-- your "about me" intro video's YouTube embed link
 
 const COLOR_CYCLE = ['green', 'black', 'white'];
 const TEXT_COLOR = { green: '#000', black: '#fff', white: '#000' };
@@ -584,7 +615,7 @@ function finishIntroSlides() {
   document.getElementById('introSkipBtns').style.display = 'none';
   document.getElementById('introNavBtns').style.display = 'none';
   document.getElementById('mainWrap').style.display = 'block';
-  document.getElementById('videoCtaCard').style.display = 'flex';
+  document.getElementById('videoCtaStack').style.display = 'flex';
 }
 
 function slideBodyHTML(slide) {
@@ -984,6 +1015,26 @@ videoCtaCard.addEventListener('click', openVideoModal);
 videoModalCloseBtn.addEventListener('click', closeVideoModal);
 videoModalOverlay.addEventListener('click', function (e) {
   if (e.target === videoModalOverlay) closeVideoModal();
+});
+
+/* ---------------- Intro/about-me video CTA card + modal ---------------- */
+const introCtaCard = document.getElementById('introCtaCard');
+const introModalOverlay = document.getElementById('introModalOverlay');
+const introModalIframe = document.getElementById('introModalIframe');
+const introModalCloseBtn = document.getElementById('introModalCloseBtn');
+
+function openIntroModal() {
+  introModalIframe.src = INTRO_VIDEO_EMBED_URL + (INTRO_VIDEO_EMBED_URL.includes('?') ? '&' : '?') + 'autoplay=1';
+  introModalOverlay.style.display = 'flex';
+}
+function closeIntroModal() {
+  introModalOverlay.style.display = 'none';
+  introModalIframe.src = ''; // stop playback
+}
+introCtaCard.addEventListener('click', openIntroModal);
+introModalCloseBtn.addEventListener('click', closeIntroModal);
+introModalOverlay.addEventListener('click', function (e) {
+  if (e.target === introModalOverlay) closeIntroModal();
 });
 
 /* ---------------- Custom cursor ---------------- */
