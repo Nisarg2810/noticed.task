@@ -368,6 +368,8 @@
     .expert-banner { padding: 36px 20px; }
   }
 </style>
+<!-- EmailJS: sends you an email when someone opens this page / clicks a tracked button. No backend needed. -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body class="pl-lock">
 
@@ -588,6 +590,36 @@ const INTRO_SLIDES_DATA = [
 ];
 const VIDEO_EMBED_URL = "https://www.youtube.com/embed/OP-bMrihdTg?si=KYuqSlXQF0ZJVHpL&amp;controls=0"; // <-- your YouTube video embed link
 const INTRO_VIDEO_EMBED_URL = "https://www.youtube.com/embed/zbmhmXEFidE?si=UJYz1wGuVSBVba02&controls=0"; // <-- your "about me" intro video's YouTube embed link
+
+/* ---------------- Email notifications (via EmailJS) ----------------
+   1. Create a free account at https://www.emailjs.com
+   2. Add an Email Service (e.g. connect your Gmail) -> copy its "Service ID"
+   3. Create an Email Template with variables like {{event}} and {{page_url}}
+      in the body -> copy its "Template ID"
+   4. Account > General > copy your "Public Key"
+   5. Paste all three below. That's it — no server needed.
+------------------------------------------------------------------- */
+const EMAILJS_PUBLIC_KEY = "QX_zYoZlN7ibZXYNv";
+const EMAILJS_SERVICE_ID = "nisargmehta2810";
+const EMAILJS_TEMPLATE_ID = "template_wa24pe8";
+
+if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+}
+
+function notifyMe(eventName) {
+  if (!window.emailjs || EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+    console.log('[notifyMe] EmailJS not configured yet — would have sent:', eventName);
+    return;
+  }
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    event: eventName,
+    page_url: window.location.href,
+    time: new Date().toLocaleString()
+  }).catch(function (err) {
+    console.error('[notifyMe] failed to send:', err);
+  });
+}
 
 const COLOR_CYCLE = ['green', 'black', 'white'];
 const TEXT_COLOR = { green: '#000', black: '#fff', white: '#000' };
@@ -938,8 +970,10 @@ function renderIntoColumns(containerId, posts, numCols) {
   container.querySelectorAll('.li-seemore').forEach(btn => {
     btn.addEventListener('click', () => {
       const target = document.getElementById(btn.dataset.target);
+      const wasExpanding = target.classList.contains('truncated'); // about to expand
       target.classList.toggle('truncated');
       btn.textContent = target.classList.contains('truncated') ? '…see more' : 'see less';
+      if (wasExpanding) notifyMe('Clicked "see more" on a post');
     });
   });
 }
@@ -1006,6 +1040,7 @@ const videoModalCloseBtn = document.getElementById('videoModalCloseBtn');
 function openVideoModal() {
   videoModalIframe.src = VIDEO_EMBED_URL + (VIDEO_EMBED_URL.includes('?') ? '&' : '?') + 'autoplay=1';
   videoModalOverlay.style.display = 'flex';
+  notifyMe('Watched "thought-process" video');
 }
 function closeVideoModal() {
   videoModalOverlay.style.display = 'none';
@@ -1026,6 +1061,7 @@ const introModalCloseBtn = document.getElementById('introModalCloseBtn');
 function openIntroModal() {
   introModalIframe.src = INTRO_VIDEO_EMBED_URL + (INTRO_VIDEO_EMBED_URL.includes('?') ? '&' : '?') + 'autoplay=1';
   introModalOverlay.style.display = 'flex';
+  notifyMe('Watched "intro / about me" video');
 }
 function closeIntroModal() {
   introModalOverlay.style.display = 'none';
@@ -1066,6 +1102,12 @@ introModalOverlay.addEventListener('click', function (e) {
   }
   requestAnimationFrame(tick);
 })();
+
+// Notify once per browser tab session when the page is opened.
+if (!sessionStorage.getItem('notifiedPageView')) {
+  notifyMe('Someone opened the page');
+  sessionStorage.setItem('notifiedPageView', '1');
+}
 </script>
 
 </body>
